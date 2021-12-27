@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&family=Vujahday+Script&display=swap');
+
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --dkgreen: #00261C;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --mdgreen: #168039;
+    --lightgreen: #96ED89;
+    --ash: #8A99A6;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+    --authorname: 'Vujahday Script', cursive;
+  }
+  /* border box model: https://css-tricks.com/box-sizing/ */
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  /* generic styles for the page */
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+    background-color: var(--dkgreen);
+    color: var(--white);
+    font-size: var(--font-size);
+  }
+  /* generic styles for reusable divs*/
+  .section-mdgreen{
+background-color: var(--mdgreen);
+  }
+  
+   /* Intro section*/
+#intro{
+    padding: 5rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+  h1,h2,h3{
+    margin: 0;
+  }
+  
+  a{
+    color: var(--lightgreen);
+  }
+  
+  a:hover{
+    color: var(--ash);
+    text-decoration: none;
+  }
+  
+  #intro p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  #intro h2{
+    font-size: 3rem;
+  }
+  
+  .name{
+    font-family: var(--mono);
+  }
+  .name span{
+    font-size: 3.5rem;
+    display: block;
+    color: var(--lightgreen);
+    font-family: var(--authorname);
+  }
+  
+  
+  /*Contact Section*/
+  #contact{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 3rem 0;
+  }
+  #contact a{
+    margin-bottom: 3rem;
+  }
+
+  #contact a:hover{
+      text-decoration: none;
+      color: var(--ash);
+  }
+  
+  /* navigation */
+  nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 4rem 1rem;
+  }
+  
+  nav h1 a {
+    font-family: var(--sans);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  nav ul li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav a:hover,
+  nav [ class*= "fa-"]:hover,
+  footer ul li a:hover{
+    color: var(--ash);
+  }
+  nav [class*= "fa-"]{
+    font-size: 150%;
+    color: var(--lightgreen);    
+  }
+  nav ul h1 [class*= "fa-"] {
+    font-size: 120%;
+  }
+  nav ul li .button{
+    background-color: var(--mdgreen);
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+  nav ul li .button:hover{
+    background-color: var(--ash);
+    color: var(--white);
+  }
+  
+  
+  /*Footer*/
+  footer{
+    text-align: center;
+    padding:2rem  0;
+  }
+  footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    font-size: 2.7rem;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  
+  
+  @media( min-width: 900px){
+    nav{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav ul li:first-child{
+      flex-basis: auto;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
+  
+  
+  
