@@ -155,7 +155,7 @@ font-size: 1.1rem;
   }
   nav ul li .button{
     background-color: var(--mdgreen);
-    padding: 0.4rem;
+    padding: 0.5rem;
     border-radius: 5px;
   }
   nav ul li .button:hover{
